@@ -4,11 +4,11 @@ Collection of Sample Amazon Alexa Skills
 Collection of sample Amazon Alexa Skills developed using Node.js and Alexa SDK.
 
 ###**Skills Overview**
-###*Greeter*
+###*[Greeter](https://github.com/Softheon/AlexaSkills/tree/master/greeter)*
 Greets a person with different types of greetings depending on a time of the day.
-###*Synonymizer*
+###*[Synonymizer](https://github.com/Softheon/AlexaSkills/tree/master/synonymizer)*
 Looks up synonyms of English words.
-###*Food Facts*
+###*[Food Facts](https://github.com/Softheon/AlexaSkills/tree/master/synonymizer)*
 Tells nutrition information about food. 
 
 ###Learning Resources
