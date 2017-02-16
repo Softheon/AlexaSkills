@@ -12,13 +12,13 @@ var thesaurus = require('thesaurus');
 
 // Launch intent function
 var launchIntentFunction = function(req, res) {
-    var prompt = 'Greeting to you! What word would you like to get synonymies for?';
+    var prompt = 'Greeting to you! What word would you like to get synonyms for?';
     res.say(prompt).shouldEndSession(false);
 };
 
 // Help intent function
 var helpIntentFunction = function(req, res) {
-    var help = 'To start tell me the word that you would like to find synonymies for? You can also say stop or cancel to exit.';
+    var help = 'To start tell me the word that you would like to find synonyms for? You can also say stop or cancel to exit.';
     res.say(help).shouldEndSession(false);
 };
 
@@ -31,7 +31,7 @@ var cancelIntentFunction = function(req, res) {
 var wordIntentFuction = function(req, res) {
     var word = req.slot('WORD');
 
-    var reprompt = 'Tell me a word to get synonymies for.';
+    var reprompt = 'Tell me a word to get synonyms for.';
 
     if (_.isEmpty(word)) {
         var prompt = 'I didn\`t hear a word.';
@@ -47,7 +47,7 @@ var wordIntentFuction = function(req, res) {
 
             res.say(errorPrompt).reprompt(reprompt).shouldEndSession(false).send();
         } else {
-            res.say('Ther are ' + synonymies.length + ' synonymies for ' + word + '. They are ' + synonymies.join(', ') + '.');
+            res.say('Ther are ' + synonymies.length + ' synonyms for ' + word + '. They are ' + synonymies.join(', ') + '.');
         }
     }
 };
@@ -64,7 +64,7 @@ app.intent('WordIntent', {
     'slots': {
         'WORD': 'LITERAL'
     },
-    'utterances': ['{The word is|Synonymies for|Similar words for|Same words for|Word|Same for} {apple|orange|car|boat|happy|WORD}']
+    'utterances': ['{The word is|Synonyms for|Similar words for|Same words for|Word|Same for} {apple|orange|car|boat|happy|WORD}']
 }, wordIntentFuction);
 
 module.exports = app;

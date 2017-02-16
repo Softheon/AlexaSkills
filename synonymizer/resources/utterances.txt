@@ -1,5 +1,5 @@
 WordIntent	The word is {apple|WORD}
-WordIntent	Synonymies for {orange|WORD}
+WordIntent	Synonyms for {orange|WORD}
 WordIntent	Similar words for {car|WORD}
 WordIntent	Same words for {boat|WORD}
 WordIntent	Word {happy|WORD}
